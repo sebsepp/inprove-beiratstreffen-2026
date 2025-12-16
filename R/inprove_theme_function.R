@@ -7,7 +7,7 @@
 # --------------------------------------------------------------------------
 # please ensure that the packages ggplot2, ggtext and cowplot are installed
 # prior to running this script, you can install them with the following command:
-# install.packages(c("ggplot2", "ggtext", "cowplot"))
+# install.packages(c("tidyverse", "ggtext", "cowplot"))
 # --------------------------------------------------------------------------
 
 # --------------------------------------------------------------------------
@@ -83,8 +83,7 @@ theme_inprove <- function(show_axis_elements = TRUE) {
 }
 
 ## examples ----
-## just uncomment (on a mac: command + shift + c) the following
-## code and run it
+## just uncomment (on a mac: command + shift + c) the following code and run it
 
 ## basic use
 # ggplot(mtcars, aes(x = wt, y = mpg)) +
@@ -106,7 +105,7 @@ theme_inprove <- function(show_axis_elements = TRUE) {
 #   labs(
 #     # if you want to use italics in your text,
 #     # you need to insert a html span tag
-#     # and specify the italized font there; see the example below
+#     # and specify the italicized font there; see the example below
 #     title = "Fuel consumption by <span style='font-family: Montserrat-BoldItalic;'>car weight</span>",
 #     x = "Weight (1000 lbs)",
 #     y = "Miles per gallon",

@@ -29,7 +29,7 @@
 theme_inprove <- function(show_axis_elements = TRUE) {
   base_theme <- cowplot::theme_cowplot() + # use theme_cowplot as a base
     ggplot2::theme(
-      # plot
+      # title
       plot.title = ggtext::element_textbox_simple(
         family = "Montserrat-Bold",
         face = "bold",
@@ -37,17 +37,20 @@ theme_inprove <- function(show_axis_elements = TRUE) {
         margin = ggplot2::margin(t = 0, r = 0, b = 12, l = 0)
       ),
       plot.title.position = "plot",
+      # subtitle
       plot.subtitle = ggtext::element_textbox_simple(
         family = "Montserrat-Medium",
         color = "black",
         margin = ggplot2::margin(t = 0, r = 0, b = 12, l = 0)
       ),
+      # caption
       plot.caption = ggtext::element_textbox_simple(
         family = "Montserrat-Medium",
         color = "black",
         margin = ggplot2::margin(t = 6, r = 0, b = 0, l = 0)
       ),
       plot.caption.position = "plot",
+      # margin
       plot.margin = rep(grid::unit(12, "pt"), 4),
 
       # axis title
@@ -83,7 +86,7 @@ theme_inprove <- function(show_axis_elements = TRUE) {
 }
 
 ## examples ----
-## just uncomment (on a mac: command + shift + c) the following code and run it
+## just uncomment the following code (on a mac: command + shift + c) and run it
 
 ## basic use
 # ggplot(mtcars, aes(x = wt, y = mpg)) +
@@ -100,7 +103,7 @@ theme_inprove <- function(show_axis_elements = TRUE) {
 #   geom_point(aes(color = mpg > 20)) +
 #   scale_color_manual(
 #     breaks = c("< 20" = "FALSE", "> 20" = "TRUE"),
-#     values = c("FALSE" = "grey80", "TRUE" = "#ed1c24")
+#     values = c("FALSE" = "grey80", "TRUE" = "#ed1c24") # in:prove red
 #   ) +
 #   labs(
 #     # if you want to use italics in your text,
@@ -127,7 +130,7 @@ theme_inprove <- function(show_axis_elements = TRUE) {
 #   width = 4,
 #   height = 4,
 #   units = "in", # default is inches but you can also use "cm", "mm" or "px"
-#   dpi = 300, # minimum should be 300 dpi (sometimes 350 or 400 dpi is better)
+#   dpi = 300, # minimum should be 300 dpi
 #   bg = "white" # ensure a white background (otherwise may be transparent)
 # )
 

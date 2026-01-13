@@ -26,7 +26,7 @@
 # --------------------------------------------------------------------------
 
 # define theme
-theme_inprove <- function(show_axis_elements = TRUE) {
+theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
   base_theme <- cowplot::theme_cowplot() + # use theme_cowplot as a base
     ggplot2::theme(
       # title
@@ -73,11 +73,18 @@ theme_inprove <- function(show_axis_elements = TRUE) {
       panel.background = ggplot2::element_rect(color = NA, fill = "white")
     )
 
-  # remove axis elements if desired
-  if (!show_axis_elements) {
+  # remove axis line if desired
+  if (!show_axis_line) {
     base_theme <- base_theme +
       ggplot2::theme(
-        axis.line = ggplot2::element_blank(),
+        axis.line = ggplot2::element_blank()
+      )
+  }
+
+  # remove axis ticks if desired
+  if (!show_axis_ticks) {
+    base_theme <- base_theme +
+      ggplot2::theme(
         axis.ticks = ggplot2::element_blank()
       )
   }
@@ -93,17 +100,17 @@ theme_inprove <- function(show_axis_elements = TRUE) {
 #   geom_point() +
 #   theme_inprove()
 
-## without axis elements - set show_axis_elements to FALSE
+## without axis ticks - set show_axis_ticks to FALSE
 # ggplot(mtcars, aes(x = wt, y = mpg)) +
 #   geom_point() +
-#   theme_inprove(show_axis_elements = FALSE)
+#   theme_inprove(show_axis_ticks = FALSE)
 
 ## advanced example with custom color
 # ggplot(mtcars, aes(x = wt, y = mpg)) +
 #   geom_point(aes(color = mpg > 20)) +
 #   scale_color_manual(
 #     breaks = c("< 20" = "FALSE", "> 20" = "TRUE"),
-#     values = c("FALSE" = "grey80", "TRUE" = "#ed1c24") # in:prove red
+#     values = c("FALSE" = "grey80", "TRUE" = inprove_red) # use in:prove red
 #   ) +
 #   labs(
 #     # if you want to use italics in your text,
@@ -136,19 +143,31 @@ theme_inprove <- function(show_axis_elements = TRUE) {
 
 #### colors ----
 ## in:prove base colors ----
-# in:prove yellow = #fdb913
-# red = #ed1c24
-# black = #000000
-# white = #ffffff
-# darkgrey = #3b3e41
-# lightgrey = #b3b3b3 # corresponds to "grey70", #cccccc = "grey80"
+# # in:prove yellow
+# inprove_yellow <- "#fdb913"
+# # red
+# inprove_red <- "#ed1c24"
+# # black
+# inprove_black <- "#000000"
+# # white
+# inprove_white <- "#ffffff"
+# # darkgrey
+# inprove_darkgrey <- "#3b3e41"
+# # lightgrey
+# inprove_lightgrey <- "#b3b3b3" # corresponds to "grey70", #cccccc = "grey80"
 
-## complementary colors ----
-# light inprove yellow = #ffdcb1
-# lightblue = #bcede9
-# midblue = #8ebde4
+# ## complementary colors ----
+# # light inprove yellow
+# inprove_lightyellow <- "#ffdcb1"
+# # lightblue
+# inprove_lightblue <- "#bcede9"
+# # midblue
+# inprove_midblue <- "#8ebde4"
 
-## (digital) avatar colors ----
-# red = #f15d47
-# yellow = #fae19d
-# green = #75ab17
+# ## (digital) avatar colors ----
+# # red
+# avatar_red <- "#f15d47"
+# # yellow
+# avatar_yellow <- "#fae19d"
+# # green
+# avatar_green <- "#75ab17"

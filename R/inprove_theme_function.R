@@ -69,8 +69,8 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
       axis.text.x = ggplot2::element_text(margin = ggplot2::margin(t = 6)),
       axis.text.y = ggplot2::element_text(margin = ggplot2::margin(r = 6)),
 
-      # panel
-      panel.background = ggplot2::element_rect(color = NA, fill = "white")
+      # plot
+      plot.background = ggplot2::element_rect(color = NA, fill = "white")
     )
 
   # remove axis line if desired

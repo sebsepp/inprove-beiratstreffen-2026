@@ -143,31 +143,31 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
 
 #### colors ----
 ## in:prove base colors ----
-# # in:prove yellow
-# inprove_yellow <- "#fdb913"
-# # red
-# inprove_red <- "#ed1c24"
-# # black
-# inprove_black <- "#000000"
-# # white
-# inprove_white <- "#ffffff"
-# # darkgrey
-# inprove_darkgrey <- "#3b3e41"
-# # lightgrey
-# inprove_lightgrey <- "#b3b3b3" # corresponds to "grey70", #cccccc = "grey80"
+# in:prove yellow
+inprove_yellow <- "#fdb913"
+# red
+inprove_red <- "#ed1c24"
+# black
+inprove_black <- "#000000"
+# white
+inprove_white <- "#ffffff"
+# darkgrey
+inprove_darkgrey <- "#3b3e41"
+# lightgrey
+inprove_lightgrey <- "#b3b3b3" # corresponds to "grey70", #cccccc = "grey80"
 
-# ## complementary colors ----
-# # light inprove yellow
-# inprove_lightyellow <- "#ffdcb1"
-# # lightblue
-# inprove_lightblue <- "#bcede9"
-# # midblue
-# inprove_midblue <- "#8ebde4"
+## complementary colors ----
+# light inprove yellow
+inprove_lightyellow <- "#ffdcb1"
+# lightblue
+inprove_lightblue <- "#bcede9"
+# midblue
+inprove_midblue <- "#8ebde4"
 
-# ## (digital) avatar colors ----
-# # red
-# avatar_red <- "#f15d47"
-# # yellow
-# avatar_yellow <- "#fae19d"
-# # green
-# avatar_green <- "#75ab17"
+## (digital) avatar colors ----
+# red
+avatar_red <- "#f15d47"
+# yellow
+avatar_yellow <- "#fae19d"
+# green
+avatar_green <- "#75ab17"

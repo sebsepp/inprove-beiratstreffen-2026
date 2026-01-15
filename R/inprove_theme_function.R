@@ -70,7 +70,8 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
       axis.text.y = ggplot2::element_text(margin = ggplot2::margin(r = 6)),
 
       # plot
-      plot.background = ggplot2::element_rect(color = NA, fill = "white")
+      plot.background = ggplot2::element_rect(color = NA, fill = "white"),
+      plot.margin = ggplot2::margin(t = 12, r = 12, b = 12, l = 12)
     )
 
   # remove axis line if desired

@@ -51,7 +51,7 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
       ),
       plot.caption.position = "plot",
       # margin
-      plot.margin = rep(grid::unit(12, "pt"), 4),
+      plot.margin = rep(grid::unit(15, "pt"), 4),
 
       # axis title
       axis.title = ggtext::element_markdown(
@@ -70,7 +70,15 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
       axis.text.y = ggtext::element_markdown(margin = ggplot2::margin(r = 6)),
 
       # plot
-      plot.background = ggplot2::element_rect(color = NA, fill = "white")
+      plot.background = ggplot2::element_rect(color = NA, fill = "white"),
+
+      # facets
+      strip.background = ggplot2::element_rect(fill = "white", color = NA),
+      strip.text = ggtext::element_markdown(
+        family = "Montserrat-Bold",
+        size = 11,
+        hjust = 0
+      )
     )
 
   # remove axis line if desired

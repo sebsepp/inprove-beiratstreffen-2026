@@ -179,3 +179,5 @@ avatar_red <- "#f15d47"
 avatar_yellow <- "#fae19d"
 # green
 avatar_green <- "#75ab17"
+# blue
+avatar_blue <- "#6D92FC"

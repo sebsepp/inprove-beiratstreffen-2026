@@ -55,7 +55,7 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
 
       # axis title
       axis.title = ggtext::element_markdown(
-        family = "Montserrat-Bold",
+        family = "Montserrat-Medium",
         color = inprove_lightgrey,
         size = 11
       ),

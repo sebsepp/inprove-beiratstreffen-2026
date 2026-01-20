@@ -56,7 +56,8 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
       # axis title
       axis.title = ggtext::element_markdown(
         family = "Montserrat-Bold",
-        size = 14
+        color = inprove_lightgrey,
+        size = 11
       ),
       axis.title.x = ggtext::element_markdown(margin = ggplot2::margin(t = 10)),
       axis.title.y = ggtext::element_markdown(margin = ggplot2::margin(r = 10)),
@@ -64,7 +65,7 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
       # axis text
       axis.text = ggtext::element_markdown(
         family = "Montserrat-Medium",
-        size = 12
+        size = 9
       ),
       axis.text.x = ggtext::element_markdown(margin = ggplot2::margin(t = 6)),
       axis.text.y = ggtext::element_markdown(margin = ggplot2::margin(r = 6)),
@@ -78,7 +79,8 @@ theme_inprove <- function(show_axis_line = TRUE, show_axis_ticks = TRUE) {
         family = "Montserrat-Bold",
         size = 11,
         hjust = 0
-      )
+      ),
+      strip.clip = "off"
     )
 
   # remove axis line if desired
